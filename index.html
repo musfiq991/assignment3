@@ -4,18 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockyes</title>
-    <!-- tailwind custom color -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
+    
     <!-- front awesome -->
     <script
       src="https://kit.fontawesome.com/b36fc2dc44.js"
@@ -291,7 +280,7 @@
               </div>
             </div>
           </div>
-          <div class="card bg-base-100 shadow-xl image-full lg:w-1/2">
+          <div class="card bg-base-100 shadow-xl image-full lg:w-1/2 mt-6 lg:mt-0">
             <figure><img src="Images/3.png" alt="Shoes" /></figure>
             <div class="card-body">
               <h2 class="text-white text-2xl font-extrabold pt-6 lg:pt-20">
@@ -365,7 +354,7 @@
             class="hero rounded-2xl border border-[#131318] border-opacity-10"
           >
             <div class="hero-content flex-col lg:flex-row">
-              <img src="Images/5.png" class="lg:max-w-sm rounded-lg shadow-2xl" />
+              <img src="Images/5.png" class=" lg:max-w-sm rounded-lg shadow-2xl" />
               <div class="space-y-3">
                 <p class="flex space-x-3">
                   <img src="Images/star.png" alt="" /> <span>5.00</span
@@ -660,7 +649,7 @@ class="mt-10 lg:mt-24 mb-6 lg:mb-12 border-t border-dotted border-[#131313]"
     <hr />
   </div>
   <!-- start -->
-  <div class="mt-12 lg:flex gap-6">
+  <div class="mt-12 lg:flex gap-6 w-full">
     <!-- slot1 -->
 <div class="space-y-6 border border-[#131318] border-opacity-10 p-12 rounded-2xl ">
 <!-- 1 -->
@@ -686,23 +675,23 @@ class="mt-10 lg:mt-24 mb-6 lg:mb-12 border-t border-dotted border-[#131313]"
 </div>
 </div>
 <!-- slot 2 -->
-<div>
-  <div class="grid lg:grid-cols-2 gap-6 flex-1">
-    <div class="space-y-4"><p class="text-[#131318] font-bold text-xl">Your Name</p><input placeholder="Enter your full name" class="input  bg-gray-100" type="text" name="" id="">
+<div class="w-full lg:w-3/5">
+  <div class="grid lg:grid-cols-2 gap-6 mt-6 lg:mt-0">
+    <div class="space-y-4"><p class="text-[#131318] font-bold text-xl">Your Name</p><input placeholder="Enter your full name" class="input w-full  bg-gray-100" type="text" name="" id="">
     </div>
-    <div class="space-y-4"><p class="text-[#131318] font-bold text-xl">Your Email</p><input placeholder="Enter your email" class="input  bg-gray-100" type="email" name="" id="">
-    </div> <div class="space-y-4"><p class="text-[#131318] font-bold text-xl">Subject</p><input placeholder="Enter your subject" class="input  bg-gray-100" type="text" name="" id="">
-    </div> <div class="space-y-4"><p class="text-[#131318] font-bold text-xl">Phone Number</p><input placeholder="Enter your phone Number" class="input  bg-gray-100" type="text" name="" id="">
+    <div class="space-y-4"><p class="text-[#131318] font-bold text-xl">Your Email</p><input placeholder="Enter your email" class="input w-full bg-gray-100" type="email" name="" id="">
+    </div> <div class="space-y-4"><p class="text-[#131318] font-bold text-xl">Subject</p><input placeholder="Enter your subject" class="input w-full  bg-gray-100" type="text" name="" id="">
+    </div> <div class="space-y-4"><p class="text-[#131318] font-bold text-xl">Phone Number</p><input placeholder="Enter your phone Number" class="input w-full  bg-gray-100" type="text" name="" id="">
     </div>
   </div>
   <!-- New -->
   <div>
-    <p class="text-[#131318] font-bold text-xl">Message</p>
-  <textarea class="textarea textarea-bordered" placeholder="Write your message"></textarea>
+    <p class="text-[#131318] font-bold text-xl pt-6 ">Message</p>
+  <textarea class="border-none textarea textarea-bordered w-full bg-gray-100 h-48 lg:h-[600px] mt-4" placeholder="Write your message"></textarea>
 </div>
-<div class="flex-1">
-  <button class="btn bg-[#FF4240] text-white">Send Message</button>
-</div>
+
+  <button class="btn bg-[#FF4240] text-white w-full ">Send Message</button>
+
 
 </div>
   </div>
@@ -720,29 +709,32 @@ class="mt-10 lg:mt-24 mb-6 lg:mb-12 border-t border-dotted border-[#131313]"
 
     </main>
 
-    <footer class="mt-24 pt-24 footer p-10 bg-[#131318] text-base-content">
-      <nav>
+    <footer class="mt-24 pt-24 footer p-10 bg-[#131318] text-base-content ">
+      <nav class="items-center lg:items-start">
         <h6 class="text-white text-2xl font-extrabold pt-6">Get In Touch</h6> 
         <p class=" text-white opacity-60">If you have any questions or need assistance with <br> something specific, feel free to ask. </p>
         <p class="flex  text-white opacity-80 pt-4 gap-x-3"> <span class="text-base text-[#FF4240]"><i class="fa-regular fa-envelope "></i></span>  hockeys@support.com</p>
         <p class="flex  text-white opacity-80 gap-x-3"> <span class="text-base text-[#FF4240]"><i class="fa-solid fa-phone"></i></i></span>  (+62) 123-321-543</p>
-        
-      </nav> 
+      </nav>
+      <div class="grid grid-cols-2 lg:grid-cols-2 space-x-12"> 
       <nav>
         <h6 class="text-white text-lg font-bold">Company</h6> 
-        <a class="link link-hover text-base font-medium text-white opacity-60">About us</a>
+        <div class="grid grid-cols-1 "><a class="link link-hover text-base font-medium text-white opacity-60">About us</a>
         <a class="link link-hover text-base font-medium text-white opacity-60">Leadership</a>
         <a class="link link-hover text-base font-medium text-white opacity-60">Careers</a>
         <a class="link link-hover text-base font-medium text-white opacity-60">News & Artical</a>
         <a class="link link-hover text-base font-medium text-white opacity-60">Legal Notice</a>
+      </div>
       </nav> 
       <nav>
         <h6 class="text-white text-lg font-bold">Support</h6> 
-        <a class="link link-hover text-base font-medium text-white opacity-60">Help Center</a>
+        <div class="grid grid-cols-1"><a class="link link-hover text-base font-medium text-white opacity-60">Help Center</a>
         <a class="link link-hover text-base font-medium text-white opacity-60">FAQ</a>
         <a class="link link-hover text-base font-medium text-white opacity-60">Ticket Support</a>
         <a class="link link-hover text-base font-medium text-white opacity-60">Contact Us</a>
+      </div>
       </nav> 
+    </div>
       <nav>
         <h6 class="text-white text-lg font-bold">Support</h6> 
         <a class="link link-hover text-base font-medium text-white opacity-60">Academy</a>
